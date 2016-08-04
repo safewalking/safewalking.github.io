@@ -36,7 +36,10 @@ body.menu-show {
   height: 100%;
   overflow-y: hidden;
 }
-
+img {
+	max-width: 100%;
+	height: auto;
+}
 a {
   color: #FA7E0A;
   -webkit-transition: 0.5s;

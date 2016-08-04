@@ -90,7 +90,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 animate-box text-center">
-								<h2 class="intro-heading">스마트폰을 사용하면서 길을 걷다가 위험에 빠지신 적이 있나요?</h2>
+								<h2 class="intro-heading">스마트폰을 사용하면서 길을 걷다가<br>위험에 빠지신 적이 있나요?</h2>
 								<form name="form1" id="form1" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSecKjDMLqd90Kd6o2uaiCdeg5QytQi38rntKyEOV1MnsTkT4g/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
 									<button class="btn btn-success" name="entry.670508424" value="Yes" type="summit" onclick="q1yes();">Yes</button>
 									<button class="btn btn-danger" name="entry.670508424" value="No" type="summit" onclick="q1no();" >No</button>
@@ -305,8 +305,14 @@
 					</div>
 				</div>
 			</section>
-			<section id="q2no" class="text-center" style="padding-top:100px;">
-				<h2>스몸비(Smombie)는 보행 중 스마트폰을 사용해 여러 안전사고에 쉽게 노출된 스마트폰(Smartphone)+좀비(Zombie)를 뜻합니다.</h2>
+			<section id="q2no" class="text-center" style="padding-top:50px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2"
+						<h2>스몸비(Smombie)는 보행 중 스마트폰을 사용해 여러 안전사고에<br>쉽게 노출된 스마트폰(Smartphone)+좀비(Zombie)를 뜻합니다.</h2>
+						</div>
+					</div>
+				</div>	
 			</section>
 			<section id="info" style="padding-top:80px">
 				<div id="fh5co-services-section">
@@ -314,7 +320,7 @@
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 text-center animate-box ">
 								<div class="heading-section">
-									<h2>빨간불 조심!</h2>
+									<h2>Safe Walking</h2>
 									<img src="images/siren.png" width="500px" height="500px" />
 									<h3><br><br>스몸비에 대처할 수 있는 보행 중 안전 관리 앱이 여기 있습니다!</h3>
 									<h3>앱에 대해서 자세히 알고싶은신가요?</h3>
@@ -418,14 +424,6 @@
 
 			});
 
-			$('#form2').on('submit', function(e) {
-				$('#info').show();
-				$('#question2').fadeOut(500);
-				$('html, body').animate({
-						scrollTop: $("#question2").offset().top
-				}, 1500, 'easeInOutExpo');
-			});
-
 			$('#email-form').on('submit', function(e) {
 				$('#email-form *').fadeOut(2000);
 				$('#thanks').fadeIn(2000);
@@ -464,7 +462,7 @@
 			function q2no() {
 				$('#question2').fadeOut(1500,function(){
 					$('#q2no').fadeIn(1500)
-					$('#q2no').fadeIn(1500);
+					$('#info').fadeIn(1500);
 					$('html, body').animate({
 							scrollTop: $("#question2").offset().top
 						}, 1500, 'easeInOutExpo');
