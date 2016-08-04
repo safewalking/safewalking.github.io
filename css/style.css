@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #b7c2c2;
 }
 
+
 #fh5co-page {
   position: relative;
   -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -436,9 +437,11 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
 }
 
 #fh5co-photos-section, #fh5co-contact-section,
-#fh5co-services-section, #fh5co-about-section,
-#fh5co-map-section {
+#fh5co-about-section,#fh5co-map-section {
   padding-bottom: 5em;
+}
+#fh5co-services-section {
+	padding-bottom: 2em;
 }
 
 #fh5co-intro-section {
@@ -614,6 +617,16 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+.services span img {
+  padding: 30px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
 
 #fh5co-about-section .about {
   width: 100%;
